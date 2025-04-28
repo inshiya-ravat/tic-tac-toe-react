@@ -24,3 +24,7 @@ export interface PlayerProp{
     name:string,
     symbol:AllowedSymbol
 }
+export type PLAYERS_INFO = {
+    name: string,
+    symbol: AllowedSymbol
+  }

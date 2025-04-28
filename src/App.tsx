@@ -4,7 +4,7 @@ import Log from './components/log/log'
 import GameOver from './components/GameOver/GameOver'
 import { useState } from 'react'
 import {WINNING_COMBINATIONS} from './winning-combination'
-import { AllowedSymbol, GameTurn, AllowedEntries } from './types/types'
+import { AllowedSymbol, GameTurn, AllowedEntries, PLAYERS_INFO } from './types/types'
 
 function App() {
   const initialBoard:AllowedEntries[][] = [
@@ -12,7 +12,7 @@ function App() {
     [null,null,null],
     [null,null,null]
   ]
-  const PLAYERS_INFO = [
+  const PLAYERS_INFO: PLAYERS_INFO[] = [
     {
       name: 'PLAYER 1',
       symbol: 'X'
